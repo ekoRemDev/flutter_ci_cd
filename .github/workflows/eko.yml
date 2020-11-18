@@ -1,7 +1,8 @@
 on:
   push:
-    tags:
-      - v*
+#    tags:
+#      - v*
+  branch: master
 name: Demo App Android Release
 jobs:
   build:
