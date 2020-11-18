@@ -1,5 +1,7 @@
 on:
   push:
+#    tags:
+#      - v*
     branches: [ master ]
 name: Demo App Android Release
 jobs:
@@ -7,13 +9,15 @@ jobs:
     name: Build APK and Create release
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-java@v1
-        with:
-          java-version: '8'
-      - uses: actions/subosito/flutter-action@v1
-        with:
-          flutter-version: '1.22.0-2.0.pre.105'
+      - name: Run a one-line script
+          run: print "Hello, world!"
+#      - uses: actions/checkout@v1
+#      - uses: actions/setup-java@v1
+#        with:
+#          java-version: '8'
+#      - uses: actions/subosito/flutter-action@v1
+#        with:
+#          flutter-version: '1.22.0-2.0.pre.105'
 #      - run: flutter pub get
 #      - run: flutter build apk
 #  - name: Release apk
