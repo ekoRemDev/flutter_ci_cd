@@ -2,7 +2,7 @@ on:
   push:
 #    tags:
 #      - v*
-  branch: master
+  branches: [ master ]
 name: Demo App Android Release
 jobs:
   build:
