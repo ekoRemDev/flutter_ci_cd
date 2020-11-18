@@ -4,8 +4,6 @@ on:
   push:
     tags:
       - v*
-      -
-
 jobs:
   build:
     name: Build APK and Create release
