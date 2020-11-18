@@ -16,10 +16,10 @@ jobs:
       - uses: actions/subosito/flutter-action@v1
         with:
           flutter-version: '1.22.0-2.0.pre.105'
-      - run: flutter pub get
-      - run: flutter build apk
-  - name: Release apk
-      uses: ncipollo/release-action@v1
-      with:
-        artifacts: "build/app/outputs/apk/release/*.apk"
-        token: ${{secrets.CI_CD_SECRET}}
+#      - run: flutter pub get
+#      - run: flutter build apk
+#  - name: Release apk
+#      uses: ncipollo/release-action@v1
+#      with:
+#        artifacts: "build/app/outputs/apk/release/*.apk"
+#        token: ${{secrets.CI_CD_SECRET}}
